@@ -1,0 +1,55 @@
+[2023-01-26 14:03:41,530] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: d1_script.get_data_from_api manual__2023-01-26T14:03:39.809140+00:00 [queued]>
+[2023-01-26 14:03:41,543] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: d1_script.get_data_from_api manual__2023-01-26T14:03:39.809140+00:00 [queued]>
+[2023-01-26 14:03:41,543] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-26 14:03:41,544] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2023-01-26 14:03:41,544] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-26 14:03:41,561] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): get_data_from_api> on 2023-01-26 14:03:39.809140+00:00
+[2023-01-26 14:03:41,567] {standard_task_runner.py:52} INFO - Started process 353 to run task
+[2023-01-26 14:03:41,570] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'd1_script', 'get_data_from_api', 'manual__2023-01-26T14:03:39.809140+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/d1_script.py', '--cfg-path', '/tmp/tmpkntcxjoh', '--error-file', '/tmp/tmp56394djh']
+[2023-01-26 14:03:41,571] {standard_task_runner.py:80} INFO - Job 3: Subtask get_data_from_api
+[2023-01-26 14:03:41,632] {task_command.py:369} INFO - Running <TaskInstance: d1_script.get_data_from_api manual__2023-01-26T14:03:39.809140+00:00 [running]> on host ec233ae30e03
+[2023-01-26 14:03:41,732] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=d1_script
+AIRFLOW_CTX_TASK_ID=get_data_from_api
+AIRFLOW_CTX_EXECUTION_DATE=2023-01-26T14:03:39.809140+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-01-26T14:03:39.809140+00:00
+[2023-01-26 14:03:42,503] {scraper.py:12} INFO - GET DATA FROM API... COMPLETED
+[2023-01-26 14:03:42,509] {scraper.py:14} INFO - DATA FROM API TO DATAFRAME... READY
+[2023-01-26 14:03:42,520] {logging_mixin.py:115} INFO - <class 'pandas.core.frame.DataFrame'>
+RangeIndex: 145 entries, 0 to 144
+Data columns (total 20 columns):
+ #   Column                    Non-Null Count  Dtype 
+---  ------                    --------------  ----- 
+ 0   CLOSECONTACT              145 non-null    int64 
+ 1   CONFIRMATION              145 non-null    int64 
+ 2   PROBABLE                  145 non-null    int64 
+ 3   SUSPECT                   145 non-null    int64 
+ 4   closecontact_dikarantina  145 non-null    int64 
+ 5   closecontact_discarded    145 non-null    int64 
+ 6   closecontact_meninggal    145 non-null    int64 
+ 7   confirmation_meninggal    145 non-null    int64 
+ 8   confirmation_sembuh       145 non-null    int64 
+ 9   kode_kab                  145 non-null    object
+ 10  kode_prov                 145 non-null    object
+ 11  nama_kab                  145 non-null    object
+ 12  nama_prov                 145 non-null    object
+ 13  probable_diisolasi        145 non-null    int64 
+ 14  probable_discarded        145 non-null    int64 
+ 15  probable_meninggal        145 non-null    int64 
+ 16  suspect_diisolasi         145 non-null    int64 
+ 17  suspect_discarded         145 non-null    int64 
+ 18  suspect_meninggal         145 non-null    int64 
+ 19  tanggal                   145 non-null    object
+dtypes: int64(15), object(5)
+memory usage: 22.8+ KB
+[2023-01-26 14:03:42,521] {logging_mixin.py:115} INFO - None
+[2023-01-26 14:03:42,687] {d1_script.py:41} INFO - [INFO] DATA INSERTED TO MYSQL IS SUCCESSFUL
+[2023-01-26 14:03:42,687] {d1_script.py:42} INFO - [INFO] [INFO] TOTAL GETTING DATA TIME FROM MYSQL IS 0.07301878929138184 S
+[2023-01-26 14:03:42,688] {python.py:173} INFO - Done. Returned value was: None
+[2023-01-26 14:03:42,702] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=d1_script, task_id=get_data_from_api, execution_date=20230126T140339, start_date=20230126T140341, end_date=20230126T140342
+[2023-01-26 14:03:42,748] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-01-26 14:03:42,795] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

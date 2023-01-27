@@ -1,0 +1,35 @@
+[2023-01-26 14:03:43,444] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: d1_script.generate_dim scheduled__2023-01-25T00:00:00+00:00 [queued]>
+[2023-01-26 14:03:43,456] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: d1_script.generate_dim scheduled__2023-01-25T00:00:00+00:00 [queued]>
+[2023-01-26 14:03:43,457] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-26 14:03:43,457] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2023-01-26 14:03:43,458] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-26 14:03:43,475] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): generate_dim> on 2023-01-25 00:00:00+00:00
+[2023-01-26 14:03:43,482] {standard_task_runner.py:52} INFO - Started process 358 to run task
+[2023-01-26 14:03:43,485] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'd1_script', 'generate_dim', 'scheduled__2023-01-25T00:00:00+00:00', '--job-id', '4', '--raw', '--subdir', 'DAGS_FOLDER/d1_script.py', '--cfg-path', '/tmp/tmppd0i90w8', '--error-file', '/tmp/tmp3lq064wv']
+[2023-01-26 14:03:43,486] {standard_task_runner.py:80} INFO - Job 4: Subtask generate_dim
+[2023-01-26 14:03:43,543] {task_command.py:369} INFO - Running <TaskInstance: d1_script.generate_dim scheduled__2023-01-25T00:00:00+00:00 [running]> on host ec233ae30e03
+[2023-01-26 14:03:43,630] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=d1_script
+AIRFLOW_CTX_TASK_ID=generate_dim
+AIRFLOW_CTX_EXECUTION_DATE=2023-01-25T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-01-25T00:00:00+00:00
+[2023-01-26 14:03:43,744] {logging_mixin.py:115} INFO - [INFO] GET DATA FROM MYSQL IS SUCCESSFUL
+[2023-01-26 14:03:43,745] {logging_mixin.py:115} INFO - [INFO] TOTAL GETTING DATA TIME FROM MYSQL IS 0.0761423110961914 S
+[2023-01-26 14:03:43,839] {logging_mixin.py:115} INFO - [INFO] INSERTED TO POSTGRES IS SUCCESSFUL
+[2023-01-26 14:03:43,839] {logging_mixin.py:115} INFO - [INFO] TOTAL INSERTED TIME TO POSTGRES IS 0.03694009780883789 S
+[2023-01-26 14:03:43,863] {logging_mixin.py:115} INFO - [INFO] GET DATA FROM MYSQL IS SUCCESSFUL
+[2023-01-26 14:03:43,864] {logging_mixin.py:115} INFO - [INFO] TOTAL GETTING DATA TIME FROM MYSQL IS 0.024211883544921875 S
+[2023-01-26 14:03:43,904] {logging_mixin.py:115} INFO - [INFO] INSERTED TO POSTGRES IS SUCCESSFUL
+[2023-01-26 14:03:43,905] {logging_mixin.py:115} INFO - [INFO] TOTAL INSERTED TIME TO POSTGRES IS 0.031119108200073242 S
+[2023-01-26 14:03:43,929] {logging_mixin.py:115} INFO - [INFO] GET DATA FROM MYSQL IS SUCCESSFUL
+[2023-01-26 14:03:43,930] {logging_mixin.py:115} INFO - [INFO] TOTAL GETTING DATA TIME FROM MYSQL IS 0.024383544921875 S
+[2023-01-26 14:03:43,968] {logging_mixin.py:115} INFO - [INFO] INSERTED TO POSTGRES IS SUCCESSFUL
+[2023-01-26 14:03:43,969] {logging_mixin.py:115} INFO - [INFO] TOTAL INSERTED TIME TO POSTGRES IS 0.02933788299560547 S
+[2023-01-26 14:03:43,969] {python.py:173} INFO - Done. Returned value was: None
+[2023-01-26 14:03:43,985] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=d1_script, task_id=generate_dim, execution_date=20230125T000000, start_date=20230126T140343, end_date=20230126T140343
+[2023-01-26 14:03:44,018] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-01-26 14:03:44,058] {local_task_job.py:273} INFO - 2 downstream tasks scheduled from follow-on schedule check
