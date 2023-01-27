@@ -7670,3 +7670,17 @@
 [2023-01-27 15:42:08,297] {logging_mixin.py:115} INFO - [2023-01-27 15:42:08,295] {dag.py:2371} INFO - Sync 1 DAGs
 [2023-01-27 15:42:08,340] {logging_mixin.py:115} INFO - [2023-01-27 15:42:08,340] {dag.py:2919} INFO - Setting next_dagrun for d1_script to 2023-01-27T00:00:00+00:00, run_after=2023-01-28T00:00:00+00:00
 [2023-01-27 15:42:08,366] {processor.py:161} INFO - Processing /opt/airflow/dags/d1_script.py took 0.728 seconds
+[2023-01-27 15:42:38,696] {processor.py:153} INFO - Started process (PID=12957) to work on /opt/airflow/dags/d1_script.py
+[2023-01-27 15:42:38,697] {processor.py:641} INFO - Processing file /opt/airflow/dags/d1_script.py for tasks to queue
+[2023-01-27 15:42:38,699] {logging_mixin.py:115} INFO - [2023-01-27 15:42:38,698] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/d1_script.py
+[2023-01-27 15:42:39,237] {processor.py:651} INFO - DAG(s) dict_keys(['d1_script']) retrieved from /opt/airflow/dags/d1_script.py
+[2023-01-27 15:42:39,282] {logging_mixin.py:115} INFO - [2023-01-27 15:42:39,281] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-01-27 15:42:39,322] {logging_mixin.py:115} INFO - [2023-01-27 15:42:39,321] {dag.py:2919} INFO - Setting next_dagrun for d1_script to 2023-01-27T00:00:00+00:00, run_after=2023-01-28T00:00:00+00:00
+[2023-01-27 15:42:39,344] {processor.py:161} INFO - Processing /opt/airflow/dags/d1_script.py took 0.653 seconds
+[2023-01-27 15:43:09,548] {processor.py:153} INFO - Started process (PID=12963) to work on /opt/airflow/dags/d1_script.py
+[2023-01-27 15:43:09,549] {processor.py:641} INFO - Processing file /opt/airflow/dags/d1_script.py for tasks to queue
+[2023-01-27 15:43:09,550] {logging_mixin.py:115} INFO - [2023-01-27 15:43:09,550] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/d1_script.py
+[2023-01-27 15:43:10,103] {processor.py:651} INFO - DAG(s) dict_keys(['d1_script']) retrieved from /opt/airflow/dags/d1_script.py
+[2023-01-27 15:43:10,145] {logging_mixin.py:115} INFO - [2023-01-27 15:43:10,144] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-01-27 15:43:10,181] {logging_mixin.py:115} INFO - [2023-01-27 15:43:10,181] {dag.py:2919} INFO - Setting next_dagrun for d1_script to 2023-01-27T00:00:00+00:00, run_after=2023-01-28T00:00:00+00:00
+[2023-01-27 15:43:10,205] {processor.py:161} INFO - Processing /opt/airflow/dags/d1_script.py took 0.661 seconds
